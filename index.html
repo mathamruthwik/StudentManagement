@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Management System</h1>
+    <p class="subtitle">A simple sample project for comparing GitHub, GitLab, and Bitbucket.</p>
+
+    <section class="card">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <label for="name">Student name</label>
+        <input id="name" type="text" placeholder="Enter student name" required>
+
+        <label for="roll">Roll number</label>
+        <input id="roll" type="text" placeholder="Enter roll number" required>
+
+        <label for="department">Department</label>
+        <input id="department" type="text" placeholder="e.g. CSE" required>
+
+        <button type="submit">Add Student</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Student Records</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Roll Number</th><th>Department</th><th>Action</th></tr>
+          </thead>
+          <tbody id="studentTable">
+            <tr class="empty-row"><td colspan="4">No students added yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>Demo project — records are stored only in this browser page and are cleared on refresh.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
