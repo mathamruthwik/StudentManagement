@@ -22,7 +22,7 @@ jobs:
           distribution: temurin
 
       - name: Compile Java
-        run: javac HelloJava.java
+        run: javac hellojava.java
 
       - name: Run Java
-        run: java HelloJava
+        run: java hellojava
