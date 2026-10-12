@@ -4,7 +4,7 @@ name: Java Hello World
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -15,14 +15,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Java JDK
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: temurin
 
       - name: Compile Java
-        run: javac hellojava.java
+        run: javac HelloJava.java
 
       - name: Run Java
-        run: java hellojava
+        run: java HelloJava
